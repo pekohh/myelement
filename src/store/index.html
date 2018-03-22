@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my-element</title>
+    <!--
+    <script type="text/javascript" src="src/plugins/swiper.min.js"><\/script>
+    <style type="text/css" href="src/common/css/swiper.min.css"><\/style>-->
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+<script>
+let nbaStars = ['yaoming','kobe','james','paul']
+let [chinaStar,...usaStar]=nbaStars
+
+console.log(chinaStar,usaStar) // yaoming ,["kobe", "james", "paul"]
+const [,,,myidol] = nbaStars
+console.log(chinaStar,usaStar, myidol) // yaoming , ["kobe", "james", "paul"] ,paul
+// 交换变量
+//[chinaStar,myidol] = [myidol,chinaStar]
+//console.log(chinaStar,myidol)//
+//const a = 1, b=2
+//[a,b]=[b,a]
+//console.log(a,b)
+const rocketsTeam = {
+    name:'rockets',
+    players:[
+      {
+         name:'james harden',
+         age: 18,
+         role: 'sg'
+      },
+      {
+         name:'yao ming',
+         age: 12,
+         role: 'c'
+      }
+    ],
+    city:'houston'
+}
+let {players:[,{role:playerRole}]} = rocketsTeam
+console.log(playerRole) 
+console.log(Object.keys(rocketsTeam))
+</script>
+  </body>
+</html>
