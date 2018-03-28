@@ -1,43 +1,208 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import App from '../App'
-import Home from '@/components/pages/home/home'
-import City from '@/components/pages/city/city'
-import Msite from '@/components/pages/msite/msite'
-import Shop from '@/components/pages/shop/shop'
-import ShopDetail from '@/components/pages/shop/children/shopDetail'
-import ShopSafe from '@/components/pages/shop/children/children/shopSafe'
-import confirmOrder from '@/components/pages/confirmOrder/confirmOrder'
-import chooseAddress from '@/components/pages/confirmOrder/children/chooseAddress'
-import invoice from '@/components/pages/confirmOrder/children/invoice'
-import remark from '@/components/pages/confirmOrder/children/remark'
-import payment from '@/components/pages/confirmOrder/children/payment'
+// import Home from '@/components/pages/home/home'
+const Home = (resolve) => {
+  import('components/pages/home/home').then((module) => {
+    resolve(module)
+  })
+}
+const City = (resolve) => {
+  import('components/pages/city/city').then((module) => {
+    resolve(module)
+  })
+}
+const Msite = (resolve) => {
+  import('components/pages/msite/msite').then((module) => {
+    resolve(module)
+  })
+}
+const Shop = (resolve) => {
+  import('components/pages/shop/shop').then((module) => {
+    resolve(module)
+  })
+}
+const ShopDetail = (resolve) => {
+  import('components/pages/shop/children/shopDetail').then((module) => {
+    resolve(module)
+  })
+}
+const ShopSafe = (resolve) => {
+  import('components/pages/shop/children/children/shopSafe').then((module) => {
+    resolve(module)
+  })
+}
+const confirmOrder = (resolve) => {
+  import('components/pages/confirmOrder/confirmOrder').then((module) => {
+    resolve(module)
+  })
+}
+const chooseAddress = (resolve) => {
+  import('components/pages/confirmOrder/children/chooseAddress').then((module) => {
+    resolve(module)
+  })
+}
+const invoice = (resolve) => {
+  import('components/pages/confirmOrder/children/invoice').then((module) => {
+    resolve(module)
+  })
+}
+const remark = (resolve) => {
+  import('components/pages/confirmOrder/children/remark').then((module) => {
+    resolve(module)
+  })
+}
+const payment = (resolve) => {
+  import('components/pages/confirmOrder/children/remark').then((module) => {
+    resolve(module)
+  })
+}
+const addAddress = (resolve) => {
+  import('components/pages/confirmOrder/children/children/addAddress').then((module) => {
+    resolve(module)
+  })
+}
+const searchAddress = (resolve) => {
+  import('components/pages/confirmOrder/children/children/children/searchAddress').then((module) => {
+    resolve(module)
+  })
+}
+const FoodDetail = (resolve) => {
+  import('components/pages/shop/children/foodDetail').then((module) => {
+    resolve(module)
+  })
+}
+const Search = (resolve) => {
+  import('components/pages/search/search').then((module) => {
+    resolve(module)
+  })
+}
+const Food = (resolve) => {
+  import('components/pages/food/food').then((module) => {
+    resolve(module)
+  })
+}
+const order = (resolve) => {
+  import('components/pages/order/order').then((module) => {
+    resolve(module)
+  })
+}
+const orderDetail = (resolve) => {
+  import('components/pages/order/children/orderDetail').then((module) => {
+    resolve(module)
+  })
+}
+const vipcart = (resolve) => {
+  import('components/pages/vipcart/vipcart').then((module) => {
+    resolve(module)
+  })
+}
+const invoiceRecord = (resolve) => {
+  import('components/pages/vipcart/children/invoiceRecord').then((module) => {
+    resolve(module)
+  })
+}
+const vipDescription = (resolve) => {
+  import('components/pages/vipcart/children/vipDescription').then((module) => {
+    resolve(module)
+  })
+}
+const userCart = (resolve) => {
+  import('components/pages/vipcart/children/userCart').then((module) => {
+    resolve(module)
+  })
+}
+const service = (resolve) => {
+  import('components/pages/service/service').then((module) => {
+    resolve(module)
+  })
+}
+const questionDetail = (resolve) => {
+  import('components/pages/service/children/questionDetail').then((module) => {
+    resolve(module)
+  })
+}
+const download = (resolve) => {
+  import('components/pages/download/download').then((module) => {
+    resolve(module)
+  })
+}
+const profile = (resolve) => {
+  import('components/pages/profile/profile').then((module) => {
+    resolve(module)
+  })
+}
+const info = (resolve) => {
+  import('components/pages/profile/children/info').then((module) => {
+    resolve(module)
+  })
+}
+const setusername = (resolve) => {
+  import('components/pages/profile/children/children/setusername').then((module) => {
+    resolve(module)
+  })
+}
+const address = (resolve) => {
+  import('components/pages/profile/children/children/address').then((module) => {
+    resolve(module)
+  })
+}
+const add = (resolve) => {
+  import('components/pages/profile/children/children/children/add').then((module) => {
+    resolve(module)
+  })
+}
+const addDetail = (resolve) => {
+  import('components/pages/profile/children/children/children/children/addDetail').then((module) => {
+    resolve(module)
+  })
+}
+const login = (resolve) => {
+  import('components/pages/login/login').then((module) => {
+    resolve(module)
+  })
+}
+const forget = (resolve) => {
+  import('components/pages/forget/forget').then((module) => {
+    resolve(module)
+  })
+}
+// import City from '@/components/pages/city/city'
+// import Msite from '@/components/pages/msite/msite'
+// import Shop from '@/components/pages/shop/shop'
+// import ShopDetail from '@/components/pages/shop/children/shopDetail'
+// import ShopSafe from '@/components/pages/shop/children/children/shopSafe'
+// import confirmOrder from '@/components/pages/confirmOrder/confirmOrder'
+// import chooseAddress from '@/components/pages/confirmOrder/children/chooseAddress'
+// import invoice from '@/components/pages/confirmOrder/children/invoice'
+// import remark from '@/components/pages/confirmOrder/children/remark'
+// import payment from '@/components/pages/confirmOrder/children/payment'
 
-import addAddress from '@/components/pages/confirmOrder/children/children/addAddress'
-import searchAddress from '@/components/pages/confirmOrder/children/children/children/searchAddress'
-import FoodDetail from '@/components/pages/shop/children/foodDetail'
-import Search from '@/components/pages/search/search'
-import Food from '@/components/pages/food/food'
-import order from '@/components/pages/order/order'
-import orderDetail from '@/components/pages/order/children/orderDetail'
+// import addAddress from '@/components/pages/confirmOrder/children/children/addAddress'
+// import searchAddress from '@/components/pages/confirmOrder/children/children/children/searchAddress'
+// import FoodDetail from '@/components/pages/shop/children/foodDetail'
+// import Search from '@/components/pages/search/search'
+// import Food from '@/components/pages/food/food'
+// import order from '@/components/pages/order/order'
+// import orderDetail from '@/components/pages/order/children/orderDetail'
 
-import vipcart from '@/components/pages/vipcart/vipcart'
-import invoiceRecord from '@/components/pages/vipcart/children/invoiceRecord'
-import vipDescription from '@/components/pages/vipcart/children/vipDescription'
-import userCart from '@/components/pages/vipcart/children/userCart'
+// import vipcart from '@/components/pages/vipcart/vipcart'
+// import invoiceRecord from '@/components/pages/vipcart/children/invoiceRecord'
+// import vipDescription from '@/components/pages/vipcart/children/vipDescription'
+// import userCart from '@/components/pages/vipcart/children/userCart'
 
-import service from '@/components/pages/service/service'
-import questionDetail from '@/components/pages/service/children/questionDetail'
-import download from '@/components/pages/download/download'
-import profile from '@/components/pages/profile/profile'
-import info from '@/components/pages/profile/children/info'
-import setusername from '@/components/pages/profile/children/children/setusername'
-import address from '@/components/pages/profile/children/children/address'
-import add from '@/components/pages/profile/children/children/children/add'
-import addDetail from '@/components/pages/profile/children/children/children/children/addDetail'
+// import service from '@/components/pages/service/service'
+// import questionDetail from '@/components/pages/service/children/questionDetail'
+// import download from '@/components/pages/download/download'
+// import profile from '@/components/pages/profile/profile'
+// import info from '@/components/pages/profile/children/info'
+// import setusername from '@/components/pages/profile/children/children/setusername'
+// import address from '@/components/pages/profile/children/children/address'
+// import add from '@/components/pages/profile/children/children/children/add'
+// import addDetail from '@/components/pages/profile/children/children/children/children/addDetail'
 
-import login from '@/components/pages/login/login'
-import forget from '@/components/pages/forget/forget'
+// import login from '@/components/pages/login/login'
+// import forget from '@/components/pages/forget/forget'
 
 Vue.use(Router)
 export default new Router({
